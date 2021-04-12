@@ -1,73 +1,152 @@
-# Getting Started with Create React App
+<h1 align="center">
+     Amazon Clone
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+One stop destination for showcasing the community you have built.
 
-In the project directory, you can run:
+### Table of Contents
+ 
+- [Tech Stack](#tech-stack)  
+- [Setup and Run](#setup-run)  
+  - [Setup local repo](#setup-repo)  
+  - [Setup Firebase credentials](#setup-firebase)  
+  - [Setup remote](#setup-remote)  
+  - [Run app](#run-app)  
+  - [Build app](#build-app) 
+- [Contributing and PR](#contributing)   
+- [Project Structure](#projectstructure)   
+- [Src Structure](#srcstructure) 
+- [Contributors](#contributors)
 
-### `npm start`
+<a id="tech-stack"></a>
+## ⚙️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* JavaScript/TypeScript
+* [NodeJs](https://nodejs.org/en/) 
+* [ReactJS](https://reactjs.org/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<a id="setup-run"></a>
+## 🔨 Setup and Run
 
-### `npm test`
+<a id="setup-repo"></a>
+### Setup local repo
+Let's setup the backend server on your local machine.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 0. Prerequisites
+* Install [Node.js](http://nodejs.org)
 
-### `npm run build`
+### 1. Fork repo
+Fork this repo to your GitHub account  
+![](https://i.ibb.co/wK4nFy9/Causefolio-fork.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Clone repo
+Clone the forked repo to your local machine
+```bash
+git clone https://github.com/<YOUR-GITHUB-USERNAME>/causefolio.git
+```
+Navigate to project directory
+```bash
+cd causefolio
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Install Dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a id="setup-firebase"></a>
+### 4. Setup firebase for development (optional)
 
-### `npm run eject`
+A firebase account is already created, but you will not have the access to it.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- To use your own firebase instance, create a new firebase project using [firebase console](https://console.firebase.google.com/).
+- After creating a project, go to [project settings](https://console.firebase.google.com/project/_/settings/general/).
+- In project settings of your newly created project there will be a section called 'Your Apps' which says 'There are no apps in your project, Select a platform to get started.' 
+- Click on the 'WebApp' Icon, then it will ask to register a new App.
+![](https://i.ibb.co/n0psH7B/Firebaseapp.png)
+- In the 2nd step of app registration, firebase will provide to you the firebase credentials of your app.
+- Now change it to provide your firebase credentials [here](https://github.com/codeforcauseorg/Code-for-cause-Leaders/blob/master/src/services/authService.js#L8-LL13)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<a id="setup-remote"></a>
+### 5. 📡 Setup remote
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+0. You will have to set up remote repositories for getting latest changes from original repository
+1. Specify a new remote upstream repository that will be synced with the fork using following command :
+ ```bash
+$ git remote add upstream https://github.com/codeforcauseorg/causefolio.git
+```
 
-## Learn More
+2. Verify the new upstream repository you've specified for your fork using `git remote -v`
+```console
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+origin  https://github.com/<your-user-name>/causefolio.git (fetch)
+origin  https://github.com/<your-user-name>/causefolio.git (push)
+upstream        https://github.com/codeforcauseorg/causefolio.git (fetch)
+upstream        https://github.com/codeforcauseorg/causefolio.git (push)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
+Your application setup is successfully completed!
+<a id="run-app"></a>
+### Running the app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+# development
+$ npm run start
+```
+<a id="build-app"></a>
+### Build Setup
 
-### Analyzing the Bundle Size
+- After doing changes, Run the command `npm run build` to build the app for production to the `build` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# build for production
+npm run build
+```
+<a id="contributing"></a>
+### Contributions and PR
 
-### Making a Progressive Web App
+- PRs should be generated against `development`.
+- Remember to run `npm run format` before creating pull request.
+- Netlify willl create a preview inside pull request, Please check if your work is fine.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<a id="projectstructure"></a>
+## Project Structure
 
-### Advanced Configuration
+    .
+    ├── build                   # Compiled files
+    ├── src                     # Source files
+    └── ...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<a id="srcstructure"></a>
+## Src Structure
 
-### Deployment
+    .
+    ├── ...
+    ├── src
+    │   ├── ...
+    │   ├── assets              # assets for the website
+    |   ├── index.js            # starting point
+    │   └── ...
+    └── ...
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<a id="contributors"></a>
+## Contributors✨
 
-### `npm run build` fails to minify
+<table>
+<tr>
+<td align="center"><a href="https://github.com/kunal-kushwaha"><img src="https://avatars.githubusercontent.com/u/42698533?s=100" width="100px;" alt="" /><br /><sub><b>Kunal Kushwaha</b></sub></a><br /><p>Project Head</p></td>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<td align="center"><a href="https://github.com/Abhishek-kumar09"><img src="https://avatars.githubusercontent.com/Abhishek-kumar09?s=100" width="100px;" alt="" /><br /><sub><b>Abhishek Kumar</b></sub></a><br /><p>Maintainer</p></td>
+
+</tr>
+
+</table>
+
+
 
 ### Ref Link
 
