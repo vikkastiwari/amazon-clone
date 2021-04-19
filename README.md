@@ -4,7 +4,7 @@
 
 ## Description
 
-One stop destination for showcasing the community you have built.
+The goal is to add all features of Amazon to this Amazon Clone.
 
 ### Table of Contents
  
