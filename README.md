@@ -85,7 +85,7 @@ $ npm run start
 npm run build
 ```
 <a id="contributing"></a>
-### Contributions and PR
+### Contribute
 
 - You can contribute to the project, just make sure it has no conflicts and it works fine before creating the pull request.
 
