@@ -62,6 +62,7 @@ A firebase account is already created, but you will not have the access to it.
 - In project settings of your newly created project there will be a section called 'Your Apps' which says 'There are no apps in your project, Select a platform to get started.' 
 - Click on the 'WebApp' Icon, then it will ask to register a new App.
 ![](https://i.ibb.co/8dhZXVJ/Firebaseapp.png)
+
 - In the 2nd step of app registration, firebase will provide to you the firebase credentials of your app.
 - Now change it in project with your firebase credentials.
 
