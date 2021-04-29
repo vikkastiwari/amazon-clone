@@ -63,7 +63,7 @@ A firebase account is already created, but you will not have the access to it.
 - Click on the 'WebApp' Icon, then it will ask to register a new App.
 ![](https://i.ibb.co/n0psH7B/Firebaseapp.png)
 - In the 2nd step of app registration, firebase will provide to you the firebase credentials of your app.
-- Now change it to provide your firebase credentials [here](https://github.com/codeforcauseorg/Code-for-cause-Leaders/blob/master/src/services/authService.js#L8-LL13)
+- Now change it in project with your firebase credentials.
 
 Your application setup is successfully completed!
 <a id="run-app"></a>
