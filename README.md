@@ -12,12 +12,10 @@ The goal is to add all features of Amazon to this Amazon Clone.
 - [Setup and Run](#setup-run)  
   - [Setup local repo](#setup-repo)  
   - [Setup Firebase credentials](#setup-firebase)  
-  - [Setup remote](#setup-remote)  
   - [Run app](#run-app)  
   - [Build app](#build-app) 
-- [Contributing and PR](#contributing)   
+- [Contribute](#contributing)   
 - [Project Structure](#projectstructure)   
-- [Src Structure](#srcstructure)
 - [Reference Links](#reflinks)
 
 <a id="tech-stack"></a>
@@ -31,7 +29,7 @@ The goal is to add all features of Amazon to this Amazon Clone.
 
 <a id="setup-repo"></a>
 ### Setup local repo
-Let's setup the backend server on your local machine.
+Let's setup the project on your local machine.
 
 ### 0. Prerequisites
 * Install [Node.js](http://nodejs.org)
@@ -67,26 +65,6 @@ A firebase account is already created, but you will not have the access to it.
 - In the 2nd step of app registration, firebase will provide to you the firebase credentials of your app.
 - Now change it to provide your firebase credentials [here](https://github.com/codeforcauseorg/Code-for-cause-Leaders/blob/master/src/services/authService.js#L8-LL13)
 
-
-<a id="setup-remote"></a>
-### 5. 📡 Setup remote
-
-0. You will have to set up remote repositories for getting latest changes from original repository
-1. Specify a new remote upstream repository that will be synced with the fork using following command :
- ```bash
-$ git remote add upstream https://github.com/codeforcauseorg/causefolio.git
-```
-
-2. Verify the new upstream repository you've specified for your fork using `git remote -v`
-```console
-
-origin  https://github.com/<your-user-name>/causefolio.git (fetch)
-origin  https://github.com/<your-user-name>/causefolio.git (push)
-upstream        https://github.com/codeforcauseorg/causefolio.git (fetch)
-upstream        https://github.com/codeforcauseorg/causefolio.git (push)
-
-```
-
 Your application setup is successfully completed!
 <a id="run-app"></a>
 ### Running the app
@@ -107,26 +85,17 @@ npm run build
 <a id="contributing"></a>
 ### Contributions and PR
 
-- PRs should be generated against `development`.
-- Remember to run `npm run format` before creating pull request.
-- Netlify willl create a preview inside pull request, Please check if your work is fine.
+- You can contribute to the project, just make sure it has no conflicts and it works fine before creating the pull request.
 
 <a id="projectstructure"></a>
 ## Project Structure
 
     .
     ├── build                   # Compiled files
-    ├── src                     # Source files
-    └── ...
-
-<a id="srcstructure"></a>
-## Src Structure
-
-    .
-    ├── ...
-    ├── src
     │   ├── ...
     │   ├── assets              # assets for the website
+    │   ├── components          # components of the website
+    │   ├── pages               # pages of the website
     |   ├── index.js            # starting point
     │   └── ...
     └── ...
