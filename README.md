@@ -23,8 +23,7 @@ The goal is to add all features of Amazon to this Amazon Clone.
 <a id="tech-stack"></a>
 ## ⚙️ Tech Stack
 
-* JavaScript/TypeScript
-* [NodeJs](https://nodejs.org/en/) 
+* JavaScript
 * [ReactJS](https://reactjs.org/)
 
 <a id="setup-run"></a>
@@ -39,7 +38,6 @@ Let's setup the backend server on your local machine.
 
 ### 1. Fork repo
 Fork this repo to your GitHub account  
-![](https://i.ibb.co/wK4nFy9/Causefolio-fork.png)
 
 ### 2. Clone repo
 Clone the forked repo to your local machine
