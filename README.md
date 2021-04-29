@@ -17,8 +17,8 @@ The goal is to add all features of Amazon to this Amazon Clone.
   - [Build app](#build-app) 
 - [Contributing and PR](#contributing)   
 - [Project Structure](#projectstructure)   
-- [Src Structure](#srcstructure) 
-- [Contributors](#contributors)
+- [Src Structure](#srcstructure)
+- [Reference Links](#reflinks)
 
 <a id="tech-stack"></a>
 ## ⚙️ Tech Stack
@@ -42,16 +42,16 @@ Fork this repo to your GitHub account
 ### 2. Clone repo
 Clone the forked repo to your local machine
 ```bash
-git clone https://github.com/<YOUR-GITHUB-USERNAME>/causefolio.git
+git clone https://github.com/<YOUR-GITHUB-USERNAME>/amazon-clone.git
 ```
 Navigate to project directory
 ```bash
-cd causefolio
+cd amazon-clone
 ```
 
 ### 3. Install Dependencies
 ```bash
-npm install
+npm install or npm i
 ```
 
 <a id="setup-firebase"></a>
@@ -131,21 +131,7 @@ npm run build
     │   └── ...
     └── ...
 
-<a id="contributors"></a>
-## Contributors✨
-
-<table>
-<tr>
-<td align="center"><a href="https://github.com/kunal-kushwaha"><img src="https://avatars.githubusercontent.com/u/42698533?s=100" width="100px;" alt="" /><br /><sub><b>Kunal Kushwaha</b></sub></a><br /><p>Project Head</p></td>
-
-<td align="center"><a href="https://github.com/Abhishek-kumar09"><img src="https://avatars.githubusercontent.com/Abhishek-kumar09?s=100" width="100px;" alt="" /><br /><sub><b>Abhishek Kumar</b></sub></a><br /><p>Maintainer</p></td>
-
-</tr>
-
-</table>
-
-
-
-### Ref Link
+<a id="reflinks"></a>
+### Reference Links
 
 React Router: https://reactrouter.com/web/guides/quick-start
