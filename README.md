@@ -19,13 +19,13 @@ The goal is to add all features of Amazon to this Amazon Clone.
 - [Reference Links](#reflinks)
 
 <a id="tech-stack"></a>
-## ⚙️ Tech Stack
+## Tech Stack
 
 * JavaScript
 * [ReactJS](https://reactjs.org/)
 
 <a id="setup-run"></a>
-## 🔨 Setup and Run
+## Setup and Run
 
 <a id="setup-repo"></a>
 ### Setup local repo
